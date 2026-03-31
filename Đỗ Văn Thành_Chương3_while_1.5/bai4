@@ -1,0 +1,11 @@
+n = int(input("Nhap n: "))
+
+i = 1
+tong = 0
+
+while i < n:
+    if i % 2 == 0:
+        tong = tong + i
+    i = i + 1
+
+print("Tong cac so chan nho hon", n, "la:", tong)
