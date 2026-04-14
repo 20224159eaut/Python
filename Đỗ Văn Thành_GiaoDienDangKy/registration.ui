@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page_register">
+       <layout class="QVBoxLayout" name="reg_vbox">
+        <item>
+         <widget class="QLabel" name="label_title">
+          <property name="font">
+           <font><pointsize>20</pointsize><bold>true</bold></font>
+          </property>
+          <property name="text"><string>Đăng ký</string></property>
+          <property name="alignment"><set>Qt::AlignCenter</set></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text"><string>Nhanh chóng và dễ dàng</string></property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="name_hbox">
+          <item><widget class="QLineEdit" name="txt_ho"><property name="placeholderText"><string>Họ</string></property></widget></item>
+          <item><widget class="QLineEdit" name="txt_ten"><property name="placeholderText"><string>Tên</string></property></widget></item>
+         </layout>
+        </item>
+        <item><widget class="QLineEdit" name="txt_contact"><property name="placeholderText"><string>Số di động hoặc email</string></property></widget></item>
+        <item><widget class="QLineEdit" name="txt_password"><property name="echoMode"><enum>QLineEdit::Password</enum></property><property name="placeholderText"><string>Mật khẩu mới</string></property></widget></item>
+        <item><widget class="QLabel" name="label_ns"><property name="text"><string>Ngày sinh</string></property></widget></item>
+        <item><widget class="QDateEdit" name="date_birth"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+        <item><widget class="QLabel" name="label_gt"><property name="text"><string>Giới tính</string></property></widget></item>
+        <item>
+         <layout class="QHBoxLayout" name="gender_hbox">
+          <item><widget class="QRadioButton" name="radio_nam"><property name="text"><string>Nam</string></property></widget></item>
+          <item><widget class="QRadioButton" name="radio_nu"><property name="text"><string>Nữ</string></property></widget></item>
+         </layout>
+        </item>
+        <item><widget class="QLabel" name="label"><property name="text"><string>Bằng cách nhấn Đăng ký, bạn đồng ý với điều khoản của chúng tôi.</string></property></widget></item>
+        <item><widget class="QCheckBox" name="chk_agree"><property name="text"><string>Tôi đồng ý với các điều khoản trên</string></property></widget></item>
+        <item><widget class="QPushButton" name="btn_register"><property name="text"><string>Đăng ký</string></property></widget></item>
+       </layout>
+      </widget>
+      
+      <widget class="QWidget" name="page_list">
+       <layout class="QVBoxLayout" name="list_vbox">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btn_back">
+          <property name="minimumSize">
+           <size><width>0</width><height>30</height></size>
+          </property>
+          <property name="text"><string>&lt; Quay lại trang Đăng ký</string></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="table_members">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
