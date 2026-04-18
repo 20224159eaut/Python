@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản Lý Bán Hàng</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_products">
+       <attribute name="title">
+        <string>Quản Lý Mặt Hàng</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_search_product">
+            <property name="text">
+             <string>Tìm kiếm:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_search_product"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="combo_search_product">
+            <item>
+             <property name="text">
+              <string>Mã hàng</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Tên hàng</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nguồn gốc</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_search_product">
+            <property name="text">
+             <string>Tìm kiếm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_add_product">
+            <property name="text">
+             <string>Thêm mặt hàng</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="table_products">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Mã hàng</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Tên hàng</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Đơn giá</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Nguồn gốc</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Thao tác</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_customers">
+       <attribute name="title">
+        <string>Quản Lý Khách Hàng</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_search_customer">
+            <property name="text">
+             <string>Tìm kiếm:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_search_customer"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="combo_search_customer">
+            <item>
+             <property name="text">
+              <string>Mã khách</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Tên khách</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Địa chỉ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Số điện thoại</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_search_customer">
+            <property name="text">
+             <string>Tìm kiếm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_add_customer">
+            <property name="text">
+             <string>Thêm khách hàng</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="table_customers">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Mã khách</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Tên khách</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Địa chỉ</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Số điện thoại</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Thao tác</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_orders">
+       <attribute name="title">
+        <string>Quản Lý Đơn Hàng</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_search_order">
+            <property name="text">
+             <string>Tìm kiếm:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_search_order"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="combo_search_order">
+            <item>
+             <property name="text">
+              <string>Mã đơn hàng</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Mã khách hàng</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_search_order">
+            <property name="text">
+             <string>Tìm kiếm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_add_order">
+            <property name="text">
+             <string>Thêm đơn hàng</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="table_orders">
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Mã đơn hàng</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mã khách hàng</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ngày tạo</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Tổng tiền</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Thao tác</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
